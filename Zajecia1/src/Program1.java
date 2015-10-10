@@ -6,7 +6,7 @@ public class Program1 {
 	{
 		System.out.println("Witaj\nprzybyszu\n");
 		
-		String s = new String("Jakiœ tekst");
+		String s = new String("JakiÂœs tekst");  // zjebaleeeeeees, zjadles literke s xD
 		System.out.println(s);
 		
 		PrintWriter stdout = new PrintWriter(System.out,true);
