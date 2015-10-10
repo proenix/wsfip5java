@@ -2,8 +2,8 @@ import java.io.PrintWriter;
 
 public class Program1 {
 	
-	// G≥Ûwny cz≥on programu z ktÛrego uruchamia siÍ reszte funkcji 
-	// Zbiera zmienne startowe w postaci tablicy stringÛw
+	// G≈Ç√≥wny cz≈Çon programu z kt√≥rego uruchamia siƒô reszte funkcji 
+	// Zbiera zmienne startowe w postaci tablicy string√≥w
 	public static void main (String args[])
 	{
 		// Wyswietla do konsoli tekst.
@@ -11,11 +11,11 @@ public class Program1 {
 		System.out.println("Witaj\nprzybyszu\n");
 		
 		// Tworzy nowa zmienna s o typie string
-		String s = new String("Jakiú tekst");
+		String s = new String("Jaki≈õ tekst");
 		// Wyswietla do konsoli zmienna s
 		System.out.println(s);
 		
-		// TODO Jakieú dziwne cudo 
+		// TODO Jakie≈õ dziwne cudo 
 		PrintWriter stdout = new PrintWriter(System.out,true);
 		stdout.println(s);
 		
