@@ -2,13 +2,13 @@
 public class tablice0 {
 	public static void main (String args[]) {
 		
-		int[] anArray;
-		anArray = new int[10];
-		
-		anArray[0] = 100;
-		anArray[2] = 100;
-		
-		System.out.println(anArray[0]);
+		final int N=5;
+		int[] liczby = new int[N];
+				
+		for(int i=0; i<liczby.length; i++) {
+			liczby[i] = i;
+			System.out.println(liczby[i]);
+		}
 	}
 	
 }
