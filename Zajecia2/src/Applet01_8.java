@@ -9,6 +9,9 @@ public class Applet01_8 extends JApplet implements ActionListener {
 	
 	JButton b1 = new JButton("Button 1"), b2 = new JButton("Button 2");
 	
+	int b1Count = 0;
+	int b2Count = 0;
+	
 	public void init() {
 		
 		Container cp = getContentPane();
@@ -28,10 +31,12 @@ public class Applet01_8 extends JApplet implements ActionListener {
 	public void actionPerformed(ActionEvent arg0) {
 		String action = arg0.getActionCommand();
 		if (action == "1") {
-			JOptionPane.showMessageDialog(frame, b1.getActionCommand());	
+			b1Count++;
+			JOptionPane.showMessageDialog(frame, b1Count);	
 		}
 		if (action == "2") {
-			JOptionPane.showMessageDialog(frame, b2.getActionCommand());
+			b2Count++;
+			JOptionPane.showMessageDialog(frame, b2Count);
 		}
 	}
 }
