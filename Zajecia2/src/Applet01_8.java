@@ -17,12 +17,21 @@ public class Applet01_8 extends JApplet implements ActionListener {
 		b1.addActionListener(this);
 		b2.addActionListener(this);
 		
+		b1.setActionCommand("1");
+		b2.setActionCommand("2");
+		
 		cp.add(b1);
 		cp.add(b2);
 	}
 	
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		JOptionPane.showMessageDialog(frame, b1.getActionCommand());
+		String action = arg0.getActionCommand();
+		if (action == "1") {
+			JOptionPane.showMessageDialog(frame, b1.getActionCommand());	
+		}
+		if (action == "2") {
+			JOptionPane.showMessageDialog(frame, b2.getActionCommand());
+		}
 	}
 }
