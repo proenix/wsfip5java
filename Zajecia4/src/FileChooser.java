@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
@@ -102,7 +103,15 @@ public class FileChooser extends JFrame implements ActionListener {
 			}
 		}
 		if (src == mWyjscie) {
+			int odp = JOptionPane.showConfirmDialog(null, "Czy na pewno chesz wyjść", "Wyjście", JOptionPane.YES_NO_OPTION);
 			
+			if (odp == JOptionPane.NO_OPTION) {
+				JOptionPane.showMessageDialog(null, "Działa dalej");
+			}
+			if (odp == JOptionPane.YES_OPTION) {
+				JOptionPane.showMessageDialog(null, "Zamyka", "Tyuł", JOptionPane.WARNING_MESSAGE);
+				dispose();
+			}
 		}
 		
 		
