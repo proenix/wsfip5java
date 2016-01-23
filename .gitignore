@@ -70,3 +70,10 @@ local.properties
  
 # PDT-specific
 .buildpath
+/JavaFXApplication1/nbproject/private/
+/JavaFXApplication1/dist/
+/JavaFXApplication1/build/
+/Zaliczenie/nbproject/private/
+/Zaliczenie/build/
+/Calc/nbproject/private/
+/Calc/build/
